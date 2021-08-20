@@ -1,3 +1,6 @@
+
+// ini perubahan dari utsman
+
 class CekHasil(var namaPemain1:String, var nilaiPemain1:String,
                var namaPemain2:String, var nilaiPemain2: String){
     lateinit var hasil: String
