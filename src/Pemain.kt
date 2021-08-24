@@ -10,8 +10,7 @@ class Pemain(var namaPemain:String) {
             //mengecek apakah inputan pemain valid
             //pemain hanya dapat menginput: Gunting, Batu atau Kertas
             //bila tidak valid, pemain harus mengulang inputan
-            val validasi = ValidasiInput(nilai)
-            val valid = validasi.cek()
+            val valid = validator(nilai)
         } while (!valid)
     }
 

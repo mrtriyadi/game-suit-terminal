@@ -1,21 +1,14 @@
-class ValidasiInput(var nilaiPemain:String) {
-    var nilaiValid1:String = "GUNTING"
-    var nilaiValid2:String = "BATU"
-    var nilaiValid3:String = "KERTAS"
-    var hasil:Boolean = true
-
-    fun cek():Boolean {
-        if (nilaiPemain != nilaiValid1 && nilaiPemain != nilaiValid2 &&
-            nilaiPemain != nilaiValid3){
-            hasil = false
+    fun validator(nilaiPemain:String):Boolean {
+        return if (nilaiPemain != "GUNTING" && nilaiPemain != "BATU" &&
+            nilaiPemain != "KERTAS"){
             println("")
             println("KETERANGAN:")
             println("Inputan salah. Pemain hanya dapat menginput: Gunting, Batu atau Kertas")
             println("Silahkan input kembali!!")
             println("")
+            false
         } else {
-            hasil = true
+            true
         }
-        return hasil
+
     }
-}

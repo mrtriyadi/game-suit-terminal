@@ -1,7 +1,6 @@
 fun main(){
     val pemain1 = Pemain("Player1")
     val pemain2 = Pemain("Player2")
-    var ulang: Boolean
 
     do {
         //menampilkan header game
@@ -20,10 +19,6 @@ fun main(){
         val cekHasil=CekHasil(pemain1.nama,pemain1.nilai,pemain2.nama,pemain2.nilai)
         cekHasil.cek()
 
-        //melakukan perulangan game
-        val cekUlang= CekUlang()
-        ulang= cekUlang.cek()
-
-    } while(ulang==true)
+    } while(ulang()==true)
 
 }
