@@ -15,7 +15,7 @@ fun main(){
         //input Pemain2
         pemain2.input()
 
-        //mengecek siapa yang menang dengan fungsi yang ada di class CekHasil
+        //mengecek siapa yang menang dengan fungsi cekHasil
         cekHasil(pemain1,pemain2)
 
     } while(ulang()==true)
