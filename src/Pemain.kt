@@ -1,6 +1,4 @@
 class Pemain(var namaPemain:String) {
-    val nama:String = namaPemain
-
     lateinit var nilai:String
 
     fun input():Unit{

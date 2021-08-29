@@ -5,25 +5,25 @@
             hasil = "Seri"
         }
         if (pemain1.nilai == "BATU" && pemain2.nilai == "KERTAS") {
-            hasil= pemain2.nama
+            hasil= pemain2.namaPemain
         }
         if (pemain1.nilai == "BATU" && pemain2.nilai == "GUNTING") {
-            hasil= pemain1.nama
+            hasil= pemain1.namaPemain
         }
         if (pemain1.nilai == "KERTAS" && pemain2.nilai == "BATU") {
-            hasil= pemain1.nama
+            hasil= pemain1.namaPemain
         }
         if (pemain1.nilai == "KERTAS" && pemain2.nilai == "KERTAS") {
             hasil= "Seri"
         }
         if (pemain1.nilai == "KERTAS" && pemain2.nilai == "GUNTING") {
-            hasil= pemain2.nama
+            hasil= pemain2.namaPemain
         }
         if (pemain1.nilai == "GUNTING" && pemain2.nilai == "BATU") {
-            hasil= pemain2.nama
+            hasil= pemain2.namaPemain
         }
         if (pemain1.nilai == "GUNTING" && pemain2.nilai == "KERTAS") {
-            hasil= pemain1.nama
+            hasil= pemain1.namaPemain
         }
         if (pemain1.nilai == "GUNTING" && pemain2.nilai == "GUNTING") {
             hasil= "Seri"
