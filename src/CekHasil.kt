@@ -1,44 +1,35 @@
-class CekHasil(var namaPemain1:String, var nilaiPemain1:String,
-               var namaPemain2:String, var nilaiPemain2: String){
-    lateinit var hasil: String
-    
     //merupakan fungsi untuk menampilkan siapa yang menang
-    fun cek(): Unit {
-        if (nilaiPemain1 == "BATU" && nilaiPemain2 == "BATU") {
+    fun cekHasil(pemain1:Pemain, pemain2:Pemain): Unit {
+        lateinit var hasil: String
+        if (pemain1.nilai == "BATU" && pemain2.nilai == "BATU") {
             hasil = "Seri"
         }
-        if (nilaiPemain1 == "BATU" && nilaiPemain2 == "KERTAS") {
-            hasil= namaPemain2
+        if (pemain1.nilai == "BATU" && pemain2.nilai == "KERTAS") {
+            hasil= pemain2.nama
         }
-        if (nilaiPemain1 == "BATU" && nilaiPemain2 == "GUNTING") {
-            hasil= namaPemain1
+        if (pemain1.nilai == "BATU" && pemain2.nilai == "GUNTING") {
+            hasil= pemain1.nama
         }
-        if (nilaiPemain1 == "KERTAS" && nilaiPemain2 == "BATU") {
-            hasil= namaPemain1
+        if (pemain1.nilai == "KERTAS" && pemain2.nilai == "BATU") {
+            hasil= pemain1.nama
         }
-        if (nilaiPemain1 == "KERTAS" && nilaiPemain2 == "KERTAS") {
+        if (pemain1.nilai == "KERTAS" && pemain2.nilai == "KERTAS") {
             hasil= "Seri"
         }
-        if (nilaiPemain1 == "KERTAS" && nilaiPemain2 == "GUNTING") {
-            hasil= namaPemain2
+        if (pemain1.nilai == "KERTAS" && pemain2.nilai == "GUNTING") {
+            hasil= pemain2.nama
         }
-        if (nilaiPemain1 == "GUNTING" && nilaiPemain2 == "BATU") {
-            hasil= namaPemain2
+        if (pemain1.nilai == "GUNTING" && pemain2.nilai == "BATU") {
+            hasil= pemain2.nama
         }
-        if (nilaiPemain1 == "GUNTING" && nilaiPemain2 == "KERTAS") {
-            hasil= namaPemain1
+        if (pemain1.nilai == "GUNTING" && pemain2.nilai == "KERTAS") {
+            hasil= pemain1.nama
         }
-        if (nilaiPemain1 == "GUNTING" && nilaiPemain2 == "GUNTING") {
+        if (pemain1.nilai == "GUNTING" && pemain2.nilai == "GUNTING") {
             hasil= "Seri"
         }
         println("")
-        println("Hasil:")
-        if(hasil=="Seri"){
-            println("SERI!!!")
-        }else {
-            println("$hasil MENANG!!!")
-        }
+        println("Pemenangnya adalah: $hasil")
         println("")
         println("")
     }
-}

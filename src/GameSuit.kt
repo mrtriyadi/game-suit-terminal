@@ -16,8 +16,7 @@ fun main(){
         pemain2.input()
 
         //mengecek siapa yang menang dengan fungsi yang ada di class CekHasil
-        val cekHasil=CekHasil(pemain1.nama,pemain1.nilai,pemain2.nama,pemain2.nilai)
-        cekHasil.cek()
+        cekHasil(pemain1,pemain2)
 
     } while(ulang()==true)
 

@@ -1,10 +1,11 @@
 class Pemain(var namaPemain:String) {
-    var nama:String = namaPemain
+    val nama:String = namaPemain
+
     lateinit var nilai:String
 
     fun input():Unit{
         do {
-            print("Masukan Pilihan $nama: ")
+            print("Masukan Pilihan $namaPemain: ")
             nilai = readLine().toString().uppercase()
 
             //mengecek apakah inputan pemain valid
